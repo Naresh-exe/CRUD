@@ -1,0 +1,35 @@
+<div class="container">
+  <h2 style="margin-left: 5%;">Hi</h2>
+  <h4 style="margin-left: 5%;">Fill Your Details</h4>
+  <form [formGroup]="index" enctype="multipart/form-data">
+<mat-form-field appearance="outline" class="exam" >
+  <mat-label>Name</mat-label>
+  <input matInput formControlName="name">
+</mat-form-field><br>
+<mat-form-field appearance="outline" class="exam">
+  <mat-label>Profession</mat-label>
+  <input matInput formControlName="profession">
+</mat-form-field><br>
+<mat-form-field appearance="outline" class="exam">
+  <mat-label>Age</mat-label>
+  <input matInput formControlName="age">
+</mat-form-field><br>
+<mat-form-field appearance="outline" class="exam">
+  <mat-label>Phone Number</mat-label>
+  <input matInput formControlName="phoneNumber">
+</mat-form-field><br>
+  <mat-label class="exam">Gender</mat-label>
+  <mat-radio-group formControlName="gender">
+  <mat-radio-button value="Male">Male</mat-radio-button>
+  <mat-radio-button value="Female">Female</mat-radio-button>
+  </mat-radio-group>
+  <br>
+  <br>
+  </form>
+  <br>
+
+
+<button mat-raised-button   (click)="Submit()"[disabled]="!index.valid"class="btn" color="primary" [mat-dialog-close]="true">SUBMIT</button>
+</div>
+
+

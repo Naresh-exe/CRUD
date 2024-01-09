@@ -1,0 +1,28 @@
+
+mat-sidenav-container{
+    height: 100%;
+}
+mat-sidenav{
+    width: 200px;
+    background-color: white;
+}
+mat-item-list{
+    width: fit-content;
+}
+.app{
+    margin-left: 2%;
+    margin-top: 5px;
+
+}
+.mat-toolbar{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+.img{
+    height: 40%;
+    width: 5%;
+    margin-left: 1%;
+}
+

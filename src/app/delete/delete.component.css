@@ -1,0 +1,9 @@
+.con{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.cancel{
+    margin-left: 2%;
+}

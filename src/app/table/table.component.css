@@ -1,0 +1,12 @@
+.demo{
+    cursor: pointer;
+}
+.btn{
+    margin-left:90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.file-input{
+    display: none;
+}

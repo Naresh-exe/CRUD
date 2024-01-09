@@ -1,0 +1,28 @@
+<div class="container">
+    <h4 style="margin-left: 5%;">Update Your Details</h4>
+    <form [formGroup]="updateinfo">
+  <mat-form-field appearance="outline" class="exam" >
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name"  >
+  </mat-form-field><br>
+  <mat-form-field appearance="outline" class="exam">
+    <mat-label>Profession</mat-label>
+    <input matInput formControlName="profession">
+  </mat-form-field><br>
+  <mat-form-field appearance="outline" class="exam">
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age">
+  </mat-form-field><br>
+  <mat-form-field appearance="outline" class="exam">
+    <mat-label>Phone Number</mat-label>
+    <input matInput formControlName="phoneNumber">
+  </mat-form-field><br>
+  <mat-label class="exam">Gender</mat-label>
+  <mat-radio-group formControlName="gender">
+  <mat-radio-button value="Male">Male</mat-radio-button>
+  <mat-radio-button value="Female">Female</mat-radio-button>
+  </mat-radio-group>
+ </form>
+  <button mat-raised-button   (click)="Update()" class="btn" color="primary" [mat-dialog-close]="true">UPDATE</button>
+  </div>
+  
